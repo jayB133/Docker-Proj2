@@ -72,7 +72,7 @@ cd /path/to/your/project
 sudo docker build -t my-app .
 sudo docker run -p 3000:3000 my-app
 ```
-3. Access the applicaiton:O
+3. Access the applicaiton:
 ```
 curl http://localhost:3000
 ```
