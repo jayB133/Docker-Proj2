@@ -10,28 +10,48 @@ A simple containerized Express.js application that serves a welcome message.
 - Docker
 - Alpine Linux
 
-## Project Structure
-my-app/
-├── src/
-│   └── server.js    # Express application entry point
-├── Dockerfile       # Docker container configuration
-├── package.json     # Node.js dependencies and project metadata
-└── README.md       # Project documentation
-
-
 ## Prerequisites
 - Docker installed on your machine
 - Node.js (for local development)
 
 ## Getting Started
 
-### Running with Docker
+## Deployment
 
-1. Build the Docker image:
-```bash
-docker build -t my-app . 
+### Initial Setup (All Environments)
+Clone the repository
+
+Windows (using WSL)
+
+1. Install prerequisites:
+
+Install WSL2 via PowerShell as administrator:
 ```
-2. Run the Container:
-```bash
-docker run -p 3000:3000 my-app
+wsl --install
 ```
+- Install Docker Desktop for Windows
+-  Ensure WSL2 integration is enabled in Docker Desktop settings
+
+2. Setup project in WSL:
+```
+# Open WSL terminal and navigate to where you want to clone the project
+cd /your/preferred/directory
+
+# Clone the repository
+git clone https://github.com/jayB133/Docker-Project.git
+cd Docker-Project
+
+# Build the Docker image
+docker build -t nomy-app:1.0 .
+
+# Run container
+docker run -d -p 3000:3000 my-app:1.0
+```
+3. Access the application:
+
+Open http://localhost:3000 in your Windows browser
+Or use curl http://localhost:3000 from WSL terminal
+
+Linux
+
+
