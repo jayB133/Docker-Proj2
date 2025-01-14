@@ -51,8 +51,6 @@ Or use curl http://localhost:3000 from WSL terminal
 
 Linux Environment
 
-Linux Environment
-
 1. Install prerequisites:
 ```
 # Install Docker
