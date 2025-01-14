@@ -16,7 +16,7 @@ A simple containerized Express.js application that serves a welcome message.
 
 ## Getting Started
 
-# Deployment
+## Deployment
 Windows (using WSL)
 
 1. Install prerequisites:
