@@ -29,8 +29,9 @@ my-app/
 
 1. Build the Docker image:
 ```bash
-docker build -t my-app .
-
+docker build -t my-app . 
+```
 2. Run the Container:
-
+```bash
 docker run -p 3000:3000 my-app
+```
