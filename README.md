@@ -16,11 +16,7 @@ A simple containerized Express.js application that serves a welcome message.
 
 ## Getting Started
 
-## Deployment
-
-### Initial Setup (All Environments)
-Clone the repository
-
+# Deployment
 Windows (using WSL)
 
 1. Install prerequisites:
@@ -42,7 +38,7 @@ git clone https://github.com/jayB133/Docker-Project.git
 cd Docker-Project
 
 # Build the Docker image
-docker build -t nomy-app:1.0 .
+docker build -t my-app:1.0 .
 
 # Run container
 docker run -d -p 3000:3000 my-app:1.0
